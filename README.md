@@ -34,7 +34,7 @@ const value = obj.fancyGet ('a.b[1].c');
 
 ### **fancyDelete ()**
 
-Get a value from the immutable object exactly like `getIn ()`
+Delete a value in the immutable object exactly like `deleteIn ()`
 but with a path.
 
 ```js
