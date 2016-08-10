@@ -6,8 +6,8 @@ fancy methods in order to avoid having to use `set`, `setIn`,
 `get`, `getIn`, etc, ... that are a bit annoying when it's
 simpler to use a path.
 
-ImmutableFancy can be used exactly like Immutable.js. It's a
-drop-in replacement.
+ImmutableFancy can be used exactly like Immutable.js. It extends
+the objects with the `fancy*` methods.
 
 ## API additions
 
