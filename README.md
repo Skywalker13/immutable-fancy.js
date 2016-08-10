@@ -14,7 +14,7 @@ the objects with the `fancy*` methods.
 On `Iterable ()` which is the base class of all other classes
 like `Map ()` and `List ()` for example.
 
-**fancySet ()**
+### **fancySet ()**
 
 Set a value in the immutable object exactly like `setIn ()`
 but with a path.
@@ -23,7 +23,7 @@ but with a path.
 const newObj = obj.fancySet ('a.b[1].c', value);
 ```
 
-**fancyGet ()**
+### **fancyGet ()**
 
 Get a value from the immutable object exactly like `getIn ()`
 but with a path.
@@ -32,7 +32,7 @@ but with a path.
 const value = obj.fancyGet ('a.b[1].c');
 ```
 
-**fancyDelete ()**
+### **fancyDelete ()**
 
 Get a value from the immutable object exactly like `getIn ()`
 but with a path.
