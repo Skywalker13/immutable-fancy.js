@@ -11,7 +11,8 @@ drop-in replacement.
 
 ## API additions
 
-On `Map ()` and `List ()`
+On `Iterable ()` which is the base class of all other classes
+like `Map ()` and `List ()` for example.
 
 **fancySet ()**
 
