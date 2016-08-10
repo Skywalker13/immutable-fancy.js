@@ -38,4 +38,20 @@ describe ('FancyImmutable API', function () {
     expected = fromJS (['x', 'y', 'z']);
     expect (obj.fancyGet ('a.d')).to.be.eql (expected);
   });
+
+  it ('#fancyDelete', function () {
+    let expected;
+
+    /* Get a simple value from an object */
+    expected = {a: {b: {}, d: ['x', 'y', 'z']}};
+    expect (obj.fancyDelete ('a.b.c').toJS ()).to.be.eql (expected);
+
+    /* Get a simple value from an array */
+    expected = {a: {b: {c: 0}, d: ['x', 'z']}};
+    expect (obj.fancyDelete ('a.d[1]').toJS ()).to.be.eql (expected);
+
+    /* Get a List from an object */
+    expected = {a: {b: {c: 0}}};
+    expect (obj.fancyDelete ('a.d').toJS ()).to.be.eql (expected);
+  });
 });

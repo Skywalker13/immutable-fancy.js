@@ -31,3 +31,14 @@ but with a path.
 ```js
 const value = obj.fancyGet ('a.b[1].c');
 ```
+
+**fancyDelete ()**
+
+Get a value from the immutable object exactly like `getIn ()`
+but with a path.
+
+```js
+const newObj = obj.fancyDelete ('a.b[1].c');
+```
+
+Alias: **fancyRemove ()**
