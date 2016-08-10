@@ -29,5 +29,5 @@ Get a value from the immutable object exactly like `getIn ()`
 but with a path.
 
 ```js
-const value = obj.fancyGet ('a.b[1].c', obj);
+const value = obj.fancyGet ('a.b[1].c');
 ```
